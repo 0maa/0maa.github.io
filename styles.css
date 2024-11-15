@@ -1,0 +1,153 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: serif;
+    font-family: 'Segoe UI', Taho Geneva, Verdana, sans-serif;
+}
+
+@keyframes heading {
+    from{
+        transform: scale(0);
+    }
+    /* 25%{
+        transform: scale(0.25) ;
+    }
+    50%{
+        transform: scale(0.5);
+        color: white;
+    }
+    75%{
+        transform: scale(0.75);
+        color: teal;
+    } */
+    to{
+        transform: scale(1);
+        color: #5a4a7d;
+    }
+}
+
+.heading, h1{
+    animation: heading 3s ease-in;
+}
+
+.heading h1 {
+    font-size: 2.5em;
+    color: #5a4a7d;
+    margin-bottom: 10px;
+}
+
+.heading p {
+    color: #7d679c;
+    margin-bottom: 20px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    min-height: 100vh;
+    background-image:url('https://fastly.picsum.photos/id/154/3264/2176.jpg?hmac=a4Q6dBKGy7G27ic7K1sEPr-KzMigvl-MQsZUEX9iFxM'); /* url(' https://picsum.photos/id/16/2500/1667?'); */
+    background-size: cover; /* Ensures the background covers the entire viewport */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    color:black;
+}
+.label-input, .checkboxes{
+    display: flex;
+    flex-direction: column;
+}
+/* {
+    display: flex;
+} */
+.heading {
+    text-align: center;
+}
+.form-group {
+    border: 1px solid #d3c3e3;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 95%;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+input{
+    max-width: 400px;
+    margin: 10px;
+}
+
+.input-info{
+    height: 25px;
+}
+
+/* .submit{
+
+    background-color: rgb(81, 81, 143);
+    color: white    ;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}  */
+.submit {
+    background-color: #7d5ba6; /* Main lilac button color */
+    color: white;
+    border: none;
+    padding: 12px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 1em;
+}
+
+/* Hover Effect */
+.submit:hover {
+    background-color: #483d8b; /* Darker shade for hover */
+    transform: scale(1.05); /* Slightly enlarge */
+}
+
+/* Active State */
+.submit-btn:active {
+    background-color: #4b0082; /* Even darker shade */
+    transform: scale(1); /* Reset scale */
+}
+
+.button-container{
+    text-align: center;
+    padding-top: 25px;
+    margin: auto
+}
+fieldset{
+    border:none;
+    margin-top: 15px;
+    margin-bottom: 10px
+}
+.skin-type{
+    margin-top: 10px
+}
+textarea{
+    background-color: white;
+    color: black;
+    height: 50px;
+}
+
+input, select, textarea {
+    max-width: 100%;
+    margin: 10px;
+    padding: 8px 12px;
+    border: 1px solid #d3c3e3;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #a98acf;
+}

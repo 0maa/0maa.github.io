@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>theRuheCove Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1 id="title">The Ruhe Cove Survey Form</h1>
+        <p id="description">We want to make our website better for you</p>
+      </div>
+      <div class="form-group">
+        <form id="survey-form">
+          <div class="info">
+            <div class="label-input">
+              <label for="name">Name: </label>
+              <input id="name" class="input-info" type="text" required name="Name" />
+            </div>
+            <div class="label-input">
+              <label for="email">Email Address: </label>
+              <input id="email" class="input-info" type="email" required name="email" />
+            </div>
+            <div class="label-input">
+              <label for="age">How old are you?</label>
+              <input
+                id="age" 
+                class="input-info"
+                type="number"
+                required
+                name="age"
+                min="18"
+                max="30"
+              />
+            </div>
+          </div>
+          <label for="skin-type">What is your skin type?</label>
+          <select class="skin-type" id="skin-type" name="skin-type">
+            <option disabled selected value="">(select one)</option>
+            <option value="1">Oily Skin</option>
+            <option value="2">Acne-prone Skin</option>
+            <option value="3">Combination Skin</option>
+            <option value="4">Dry Skin</option>
+            <option value="5">Normal Skin</option>
+          </select>
+
+          <fieldset>
+            <legend>Do you have a skincare routine?</legend>
+            <label for="routine"
+              >Yes, I do<input
+                id="routine"
+                type="radio"
+                name="routine"
+                class="inline"
+                value="1"
+            /></label>
+            <label for="no routine">
+              No, I don't
+              <input
+                id="no routine"
+                type="radio"
+                name="routine"
+                class="inline"
+                value="2"
+              />
+            </label>
+          </fieldset>
+          <p>
+            Which skincare products would you like to see more varieties of?
+          </p>
+          <div class="checkboxes">
+            <div class="check-input">
+              <input type="checkbox" value="1" id="sunscreen" />
+              <label for="sunscreen">Sunscreen</label>
+            </div>
+            <div class="check-input">
+              <input type="checkbox" value="2" id="cleanser" />
+              <label for="cleanser">Cleanser</label>
+            </div>
+            <div class="check-input">
+              <input type="checkbox" value="3" id="serum" />
+              <label for="serum">Serums</label>
+            </div>
+            <div class="check-input">
+              <input type="checkbox" value="4" id="moisturizer" />
+              <label for="moisturizer">Moisturizer</label>
+            </div>
+            <div class="check-input">
+              <input type="checkbox" value="5" id="toner" />
+              <label for="toner">Toner</label>
+            </div>
+          </div>
+          <div class="label-input">
+            <label for="suggestions"> We want to hear your suggestions </label>
+            <textarea
+              name="suggestions"
+              id="suggestions"
+              placeholder=" I think..."
+            ></textarea>
+          </div>
+          <div class="button-container">
+            <button type="button" class="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
